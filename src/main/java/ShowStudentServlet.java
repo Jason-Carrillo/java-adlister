@@ -8,9 +8,6 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "ShowStudentServlet", urlPatterns = "/users")
 public class ShowStudentServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
@@ -23,7 +20,7 @@ public class ShowStudentServlet extends HttpServlet {
         out.println("<span> Grade: " + grade + "</span>");
     }
 
-    protected void doHost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
