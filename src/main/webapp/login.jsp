@@ -13,17 +13,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<%@ include file="partials/navbar.jsp" %>
+<%@ include file="partials/head.jsp" %>
 <form method="post">
-    <input type="text" name="username" id="username" placeholder="Username">
-    <input type="text" name="password" id="password" placeholder="Password">
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Password">
     <button type="submit">Submit</button>
 </form>
 
-<title>Please login</title>
 <c:if test="${param.username.equalsIgnoreCase('admin') && param.password.equals('password')}">
     <meta http-equiv="Refresh" content="0; url='/profile.jsp'" />
 </c:if>
 
 </body>
+<%@ include file="partials/footer.jsp" %>
 </html>
