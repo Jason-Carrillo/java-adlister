@@ -11,6 +11,8 @@
     <title>ads</title>
 </head>
 
+request.getRequestDispatcher("/products/index.jsp").forward(request, resp);
+
 
 
 </html>
