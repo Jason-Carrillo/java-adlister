@@ -20,7 +20,7 @@ public class HelloWorldServlet extends HttpServlet {
         }
 
         Ads ListAdsDao = DaoFactory.getAdsDao();
-        // Use a method on the dao to get all the products
+        // Use a method on the dao to get all ads
         List<Ad> ads = ListAdsDao.all();
         // Pass the data to the jsp
         request.setAttribute("ads", ads);
