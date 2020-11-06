@@ -37,6 +37,12 @@ public class ListAdsDao implements Ads {
             "JavaScript Developer needed",
             "Must have strong Java skills"
         ));
+        ads.add(new Ad(
+                5,
+                3,
+                "Worker Needed",
+                "Must have worker skills. Good worker skills preferred."
+        ));
         return ads;
     }
 }
