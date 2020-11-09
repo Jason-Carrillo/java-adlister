@@ -2,6 +2,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.mysql.cj.jdbc.Driver;
+
+
 public class MySQLAdsDao implements Ads {
     private Connection connection = null;
     private Config config = new Config();
@@ -11,8 +14,8 @@ public class MySQLAdsDao implements Ads {
         try {
             DriverManager.registerDriver(new Driver());
             connection = DriverManager.getConnection(
-                    config.getUrl();
-                    config.getUsername();
+                    config.getUrl(),
+                    config.getUsername(),
                     config.getPassword()
             );
         } catch (SQLException throwables){
@@ -38,10 +41,11 @@ public class MySQLAdsDao implements Ads {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        return ads;
     }
 
     @Override
     public Long insert(Ad ad) {
-        return null;
+        return 0L;
     }
 }
