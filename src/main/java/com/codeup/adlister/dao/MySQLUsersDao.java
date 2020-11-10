@@ -6,7 +6,7 @@ public class MySQLUsersDao implements Users {
 
     @Override
     public User findByUsername(String username) {
-        return SELEC
+        return null;
     }
 
     @Override
