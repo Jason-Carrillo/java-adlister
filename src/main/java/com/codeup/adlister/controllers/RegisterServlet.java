@@ -32,5 +32,7 @@ public class RegisterServlet extends HttpServlet {
             response.sendRedirect("/profile");
             return;
         }
+        request.getRequestDispatcher("/WEB-INF/register.jsp")
+                .forward(request, response);
     }
 }
