@@ -5,6 +5,7 @@
   Time: 1:14 PM
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,6 +16,9 @@
 <body>
 <div class="container">
     <h1>Register</h1>
+    <c:if test="${sessionScope.registerError != null}">
+        ${sessionScope.registerError}
+    </c:if>
     <form action="/register" method="post">
         <div class="form-group">
             <label for="username">Username</label>
