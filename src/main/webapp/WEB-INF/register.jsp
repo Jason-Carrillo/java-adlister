@@ -26,7 +26,11 @@
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <input id="password" name="password" class="form-control" type="input">
+            <input id="password" name="password" class="form-control" type="password">
+        </div>
+        <div class="form-group">
+            <label for="password_confirm">Password</label>
+            <input id="password_confirm" name="password_confirm" class="form-control" type="password">
         </div>
         <input type="submit" class="btn btn-block btn-primary">
     </form>
